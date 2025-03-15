@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body{
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+        .header { display: flex;
+            align-items: center;
+            width: 1440px;
+            height: 100px;
+          
+          
+     
+            
+        }
+        .logo span { font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;}
+      
+      
+    .logo img{
+        width: 50px;
+        height: 32px;
+        
+    }
+    .logo {
+        display: flex;
+        gap: 3px;
+    }
+    .yazilar { 
+        font-family: Arial, Helvetica, sans-serif;
+        flex: 1; /* Menüye esneklik kazandırarak ortalar */
+    display: flex;
+    justify-content: center; /* Menü içeriğini ortala */
+    gap: 40px;
+    font-size: large;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+.icons img {
+    width: 23px;
+    height: 20px;
+}
+.main {
+    position: relative;
+}
+
+    
+
+ .container {
+    display: flex;
+    position: relative;
+    background-color: #FFF3E3;
+    width: 643px;
+    height: 443px;
+    padding: 40px;
+    position: absolute;
+    left: 700px;
+    bottom: 100px;
+ 
+
+ 
+  
+}
+
+.mainimg {
+  height: auto;
+  width: %100;
+}
+    .spanler {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .new {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17pt;
+        letter-spacing: 2px;
+    
+    }
+    .Discover {
+        font-size: 50pt;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #B88E2F;
+        font-weight: bold;
+    }
+    .lorem {
+        font-size: 20pt;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .main button { border: none;
+    background-color: #B88E2F;
+color: white;
+width: 222px;
+height: 74px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 12pt;
+margin-top: 60px;}
+.yazi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    
+}
+.imagess {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 381px;
+    height: 480px;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.imagess img{
+    border-radius: 16px;
+}
+.browsee {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.lorem1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666666;
+}
+.dining {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    gap: 10px;
+}
+.living {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    gap: 10px;
+}
+.bedroom
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    gap: 10px;
+} 
+.buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center; /* Butonları ortalar */
+    gap: 20px; /* Butonlar arası boşluk */
+    
+}
+
+    
+    
+    
+    
+
+.buttons button {
+    width: 285px;
+    height: 445px;
+    margin: 10px; 
+    border: none;
+    background-color: #f4f5f7;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center; }
+   
+
+    
+
+.our {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.buttons img {
+    width: 285px;
+    height: 301px;
+   
+}
+.name {
+    
+    font-size: 20px;
+    font-weight: bold;
+align-self: flex-start;
+
+margin-top: 15px;
+margin-left: 7px;
+    
+    
+}
+.aciklama {
+    align-self: flex-start;
+    margin: 7px;
+    color:  #898989;
+margin-top: 10px;
+
+}
+.para {
+    align-self: flex-start;
+    font-size: 15px;
+    margin: 7px;
+    font-weight: bold;
+}
+.para2 {
+   margin-top: -23px;
+   margin-left: 45px;
+   font-size: 12px;
+   color:  #B0B0B0;
+   text-decoration: line-through;}
+   .buttons button :hover .overlay {background: rgba(0, 0, 0, 0.5); /* Resim üzerine karartma efekti */
+}
+
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> <img src="Meubel House_Logos-05.png" alt="">
+            <span> Furniro</span>
+        </div>
+        <div class="yazilar"> <span> Home</span>
+        <span>Shop</span>
+    <span>About</span>
+<span>Contact</span></div>
+<div class="icons">
+    <img src="mdi_account-alert-outline.png" alt="">
+    <img src="akar-icons_search.png" alt="">
+    <img src="akar-icons_heart.png" alt="">
+    <img src="ant-design_shopping-cart-outlined.png" alt="">
+</div>
+    </div>
+<div class="main">
+    <img class="mainimg" src="scandinavian-interior-mockup-wall-decal-background 1.png" alt="">
+    <div class="container">
+        <div class="spanler">
+        <span class="new"> New arrival</span>
+        <span class="Discover">Discover Our </span>
+        <span class="Discover">New Collection</span>
+        <span class="lorem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</span>
+<button>BUY NOW</button>
+</div>
+    </div>
+</div>
+    <div class="browse">
+        <div class="yazi">
+        <span class="browsee"> Browse The Range</span>
+        <span class="lorem1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> </div>
+        <div class="imagess">
+            <div class="dining"> <img src="image 106.png" alt=""> <span> Dining</span> </div>
+            <div class="living"> <img src="image 100.png" alt=""> <span> Living</span></div>
+            <div class="bedroom"> <img src="image 101.png" alt=""> <span>Bedrooms</span></div>
+        </div>
+    </div>
+
+    <div class="ourProductys">
+        <span class="our">Our Products</span>
+        <div class="buttons"> 
+        <button> <div class="image-container"> <img src="image 1.png" alt=""> </div>
+          
+            <span class="name">Syltherine</span>
+             <span class="aciklama"> Lorem ipsum dolor.</span> 
+             <span class="para">Rp 2.500.000</span>
+             <span class="para2">Rp 3.500.000</span>
+        </button>
+        <button> <img src="image 2.png" alt=""> <span class="name"> Leviosa</span>
+             <span class="aciklama"> Lorem, ipsum dolor.</span>
+             <span class="para">Rp 4.500.000</span>
+        </button>
+        <button> <img src="image 3.png" alt=""><span class="name"> Lolito</span> 
+            <span class="aciklama">Lorem, ipsum dolor. </span>
+            <span class="para">Rp 7.500.000</span>
+            <span class="para2">Rp 12.500.000</span>
+        </button>
+        <button> <img src="image 6.png" alt=""><span class="name">Respira</span>
+             <span class="aciklama">Lorem, ipsum dolor. </span>
+             <span class="para">Rp 3.500.000</span>
+        </button>
+        <button> <img src="image 7.png" alt=""><span class="name">Potti</span> 
+            <span class="aciklama">Lorem, ipsum dolor. </span>
+            <span class="para">Rp 8.500.000</span>
+        </button>
+        <button> <img src="Image 5.png" alt=""><span class="name">Griffo</span>
+             <span class="aciklama"> Lorem, ipsum.</span>
+             <span class="para">Rp 2.000.000</span>
+        </button>
+        <button> <img src="image 8.png" alt=""><span class="name">Muggo</span> 
+            <span class="aciklama"> Lorem, ipsum dolor.</span>
+            <span class="para">Rp 3.500.000</span>
+        </button>
+    <button> <img src="Images.png" alt="">
+        <span class="name"> Pingy</span> 
+        <span class="aciklama"> Lorem, ipsum dolor.</span>
+        <span class="para">Rp 4.500.000</span>
+        <span class="para2">Rp 6.000.000</span>
+       
+    </button> </div> 
+    </div>
+    <div class="beautifulRooms"></div>
+    <div class="furniture"></div>
+    <div class="footer"></div>
+</body>
+</html>
