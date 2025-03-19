@@ -74,7 +74,7 @@
 
 .mainimg {
   height: auto;
-  width: %100;
+  width: 100%;
 }
     .spanler {
         display: flex;
@@ -188,7 +188,7 @@ margin-top: 60px;}
     background-color: #f4f5f7;
     display: flex;
     flex-direction: column;
-
+position: relative;
     align-items: center; }
    
 
@@ -207,8 +207,11 @@ margin-top: 60px;}
 .buttons img {
     width: 285px;
     height: 301px;
+    
+
    
 }
+
 .name {
     
     font-size: 20px;
@@ -239,12 +242,164 @@ margin-top: 10px;
    font-size: 12px;
    color:  #B0B0B0;
    text-decoration: line-through;}
-   .buttons button :hover .overlay {background: rgba(0, 0, 0, 0.5); /* Resim üzerine karartma efekti */
+   .showmore {
+    all: unset;
+    width: 245px;
+    height: 48px;
+   color: #B88E2F;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: #B88E2F solid;
+    margin-top: 20px;
+ } 
+ .showbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .beautifulRooms {
+    width: 100%;
+    height: 670px;
+    background-color:  #FCF8F3;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+ }
+.spans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: flex-start;
+    gap: 5px;
+    margin: 50px;
+ 
 }
+.ours { font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 
+}
+.inspiration {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  
+   
+
+}
+.spans .ourdesign  {
+    all: unset;
+    font-size: 22px;
+    color:  #616161;
+    margin-top: 20px;
+
+  }
+
+.spans .ourdesign2  {
+    all: unset;
+    font-size: 22px;
+    color:  #616161;
+    text-align: start;
+
+  
+}
+.exploremore {
+    width: 176px;
+    height: 48px;
+    border: none;
+    background-color: #B88E2F;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+  
+}
+.foto1{
+    margin-left: 20px;
+}
+.foto2 {
+    margin-left: 30px;
+}
+.foto3 {
+    margin-left: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.furniroyazilar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+}
+.share{
+    font-size: 20px;
+    color: #616161;
+}
+.hastag {
+    font-size: 40px;
+    color: #3a3a3a;
+    font-weight: bold;
+}
+.ekranresmi {
+    width: 100%;
+}
+.container3{
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+   border-bottom: 2px solid #ccc;
+   padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: flex-start;
+    align-self: start;
+    margin-top: 50px;
+    width: 100%;
+
+
+}
+.part1{
+    display: flex;
+    margin-left: 50px;
+    gap: 20px;
+   
+}
+.part2{
+    display: flex;
     
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 50px;
 
+ 
+}
+.part2 a{
+    text-decoration: none;
+    color: #898989;
 
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.part2ici {
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+}
+#subscribe {
+    color: black;
+}
+#uni {
+    color: #898989;
+}
+hr {
+    background-color: #898989;
+}
 
     </style>
 </head>
@@ -310,7 +465,10 @@ margin-top: 10px;
              <span class="aciklama">Lorem, ipsum dolor. </span>
              <span class="para">Rp 3.500.000</span>
         </button>
-        <button> <img src="image 7.png" alt=""><span class="name">Potti</span> 
+        <button class="opak"> <img  src="image 7.png" alt="">
+            
+
+            <span class="name">Potti</span> 
             <span class="aciklama">Lorem, ipsum dolor. </span>
             <span class="para">Rp 8.500.000</span>
         </button>
@@ -329,9 +487,68 @@ margin-top: 10px;
         <span class="para2">Rp 6.000.000</span>
        
     </button> </div> 
+ 
     </div>
-    <div class="beautifulRooms"></div>
-    <div class="furniture"></div>
-    <div class="footer"></div>
+    <div class="showbutton">
+        <button class="showmore">Show more</button>
+    </div>
+    <div class="beautifulRooms">
+        <div class="spans">
+            <span class="ours">50+ Beautiful rooms </span>
+            <span class="inspiration">inspiration </span>
+            <span class="ourdesign"> Our designer already made a lot of beautiful </span>
+            <span class="ourdesign2"> prototipe of rooms that inspire you</span>
+            <button class="exploremore">Explore more</button>
+
+        </div>
+        <div class="foto1">
+            <img src="Image.png" alt="">
+        </div>
+        <div class="foto2"> <img src="Rectangle 25.png" alt=""></div>
+        <div class="foto3"> <img src="Rectangle 26.png" alt=""></div>
+
+    </div>
+    <div class="furniture">
+        <div class="furniroyazilar">
+            <span class="share">Share your Set up with</span>
+            <span class="hastag"> #FurniroFurniture</span>
+        </div>
+        <img class="ekranresmi" src="Ekran Resmi 2025-03-17 19.47.42.png" alt="">
+        
+    </div>
+
+<div class="container3">
+<div class="part1">
+    <h1>Furino</h1>
+    <span id="uni"> 400 University Drive Suite 200 Coral Gables,
+        FL 33134 USA</span>
+</div>
+<div class="part2">
+
+</div>
+<div class="part2">
+    <a href="">Links</a>
+    <a href="">Home</a>
+    <a href="">Shop</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+   
+</div>
+<div class="part2">
+    <a href="">Help</a>
+    <a href="">Payment options</a>
+    <a href="">Returns</a>
+    <a href="">Privacy Policies</a>
+</div>
+<div class="part2">
+    <a href="">Newslatter</a>
+    <div class="part2ici">
+       <a href="">Enter Your Email Address</a>
+       <a href id="subscribe">Subscribe</a>
+    </div>
+</div>
+
+            </div>
+
 </body>
 </html>
